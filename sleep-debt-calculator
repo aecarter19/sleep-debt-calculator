@@ -1,0 +1,35 @@
+function getSleepHours(day) {
+  if (
+    day === "monday" ||
+    day === "tuesday" ||
+    day === "wednesday" ||
+    day === "thursday" ||
+    day === "friday" ||
+    day === "saturday" ||
+    day === "sunday"
+  ) {
+    return 8;
+  } else {
+    return "This is not a valid input.";
+  }
+}
+
+const getActualSleepHours = () =>
+  getSleepHours("monday") +
+  getSleepHours("tuesday") +
+  getSleepHours("wednesday") +
+  getSleepHours("thursday") +
+  getSleepHours("friday") +
+  getSleepHours("saturday") +
+  getSleepHours("sunday");
+
+const getIdealSleepHours = () => {
+  const idealHours = 9;
+  return idealHours * 7;
+};
+
+const calculateSleepDebt = () => {
+var actualSleepHours = getActualSleepHours();
+var idealSleepHours = getActualSleepHours();
+}
+
